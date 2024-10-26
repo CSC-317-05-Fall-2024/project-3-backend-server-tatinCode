@@ -1,3 +1,19 @@
+/*
+
+    @Author: Justine Tenorio
+    @file created: ???
+    @file modified: October 25, 2024
+
+    ???? - jtenorio
+        - finished project 1
+
+    ???? - jtenorio
+        - finished project 2
+
+    October 25, 2024 - jtenorio
+        - finished project 3, will try to add and document better next project
+
+*/
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -38,17 +54,17 @@ app.get('/attractions', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'attractions.html'));
 });
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-
 /*
 
-    Route for restaurant.ejs when creating a new restaurant
+Route for restaurant.ejs when creating a new restaurant
 
 */
 app.get('/new-restaurant', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'newRestaurant.html'));
 });
+
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 /*
 

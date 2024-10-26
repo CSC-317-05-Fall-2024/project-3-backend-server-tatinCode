@@ -1,7 +1,6 @@
 /* 
-    @file restaurantCards.js
-        This file should contain definitions for deleteRestaurantCard,
-        and js to attach it as a handler per card.
+    This file should contain definitions for deleteRestaurantCard,
+    and js to attach it as a handler per card.
 */
 
 /*

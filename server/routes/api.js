@@ -1,3 +1,8 @@
+/*
+
+    This file contains the routes for the backend of the application.
+
+*/
 import express from 'express';
 import { getRestaurants, getRestaurant, createRestaurant, deleteRestaurant } from '../data/restaurants.js';
 
@@ -5,7 +10,7 @@ const router = express.Router();
 
 /*
         
-    the function for the restaurantData array
+    gets the restaurantData array. using the function getRestaurants().
     
 */
 router.get('/restaurants', (req, res) => {
@@ -14,8 +19,8 @@ router.get('/restaurants', (req, res) => {
 
 /*
         
-    the function to search the restaurantData array for a specific
-    restaurant by id.
+    Search the restaurantData array for a specific restaurant by id. using
+    the function getRestaurant().
         
 */
 router.get('/restaurants/:id', (req, res) => {
@@ -32,8 +37,8 @@ router.get('/restaurants/:id', (req, res) => {
 
 /*
 
-    the function to add a restarant and iterates the data into the 
-    restaurantData array.
+    Adds a restaurant to the restaurantData array by calling 
+    the function createRestaurant().
 
 */
 router.post('/restaurants', express.json(), (req, res) => {
@@ -44,7 +49,8 @@ router.post('/restaurants', express.json(), (req, res) => {
 
 /* 
     
-    the funciton to delete a restaurant by id.
+    Deletes a restaurant by id from the restaurantData array by calling
+    the function deleteRestaurant().
     
 */
 router.delete('/restaurants/:id', (req, res) => {
