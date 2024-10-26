@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 /*
 
-    Mounts the API router on the /api path
+    To mount the API router on the /api path
 
 */
 app.use(express.json());

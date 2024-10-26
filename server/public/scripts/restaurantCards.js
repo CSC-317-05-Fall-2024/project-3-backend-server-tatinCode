@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     deleteButtons.forEach(button => {
         button.addEventListener('click', ()=> {
             const restaurantCard = button.closest('.card');
-            deleteRestaurantCard(restaurantCard);
-            
+            deleteRestaurantCard(restaurantCard); 
         });
     });
 });
